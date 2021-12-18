@@ -1,0 +1,28 @@
+TASK LIST:
+- Menu + Header/Banners + scripting/reg[Meryl]
+- Home Page [Vani + Meryl]
+- About [Maxine + Joyce]
+- Competition[Ruth + Charlotte]
+- Attendee Page [Andrew + Larry]
+
+DUE DATES:
+- landing page due 5/4 [status:done]
+- all pages Sunday 5/9 due 11:59
+  - checking for bugs, design consistency, etc until 5/11
+- Attendee Page only due later bc not necessary right now
+
+REFERENCE: https://docs.google.com/presentation/d/19Cwm2h-pAMwHCRlipjYoKpz1wbtWoOZd1wc-u8WqQlc
+
+https://docs.google.com/document/d/1EqarFigWJ0Jha863KBl8weK9H6OeLRVutiGCJIltdqI
+
+logistics content folder: https://drive.google.com/drive/folders/1NOCgO-XQuXyN1wRGZ9qY7-D9-LVdAEdp
+
+*******************************************
+WEBSITE UPDATES:
+- must log for major changes to script.js and changes to existing CSS classes in main.css
+    - to keep track of sources of site-wide problems  
+
+- example: [Meryl 5/5] Updated script.js to add authentication cookie checker
+- [Ruth 5/5] Created basic competition page on a different repl: https://replit.com/@BirdDrawer/comppage#index.html
+- [Ruth 5/6] Added competition page, added CSS to style.css, commented out timer code on script.js - note: fonts on competition page are incorrect, but I'm not entirely sure what the right ones are
+- Ruth[6/17] Changed sponsor page to word cloud

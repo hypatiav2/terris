@@ -1,0 +1,169 @@
+p {
+  color: black;
+}
+
+#hero {
+    background-color: #144068;
+    margin: 0%;
+    padding: 7%;
+    text-align: center;
+}
+#hero h1 {
+    font-size: 98px;
+    font-weight: 900;
+    margin: 1%;
+    color: #144068;
+}
+#hero p {
+    margin: 0%;
+}
+
+.wrapperalt {
+  padding: 4.75em 50px;
+}
+.aboutush2 {
+  font-weight: 10em !important;
+  color: #073560;
+  font-size: 2em;
+}
+@media screen and (max-width: 700px) {
+    .aboutush2 {
+      font-size:1.4em;
+      overflow-wrap: break-word;
+    }
+}
+.aboutusp{
+  color: #545454;
+  text-align: center;
+  font-size:18px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#partnerships img {
+  max-height: 100px;
+  max-width: 100px;
+  transition: transform .5s;
+}
+
+#partnerships img:hover {
+  transform: scale(1.10);
+}
+
+@media screen and (min-width: 1200px) {
+
+		#partnerships img {
+      max-height: 150px;
+      max-width: 150px;
+    }
+
+    #partnerships p {
+      font-size: 21px;
+    }
+
+	}
+@media screen and (max-width: 650px) {
+    #partnerships p {
+      text-align: left;
+    }
+}
+
+
+.picwrap {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.piccolumn {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+}
+
+.piccolumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.imgrow {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.imgcolumn {
+  flex: 20%;
+  padding: 0 4px;
+}
+
+.imgcolumn img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 10rem;
+}
+
+.whitebg {
+  background-color:white;
+}
+
+#sponsors {
+  background-color: #F5F9FF;
+  text-align: center;
+  padding: 5%;
+  height: 50%;
+  overflow:hidden;
+}
+#sponsors img {
+  display:block;
+  margin:auto;
+  max-height:120px;
+  max-width:90%;
+  padding:5px;
+  transition: transform .5s;
+}
+
+#sponsors img:hover {
+  transform: scale(1.10);
+}
+
+@media screen and (max-width: 700px) {
+    #sponsors img {
+      max-height:100px;
+    }
+}
+
+
+#sponsors a, #sponsors a:hover, #sponsors a:visited, #sponsors a:active {
+    color:black !important;
+    margin: 0%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+#pictures {
+  width: 100%;
+  padding: 2%;
+  background-color: #55beb3;
+}
+
+.whoweare{
+  text-align: justify;
+  padding-bottom: 5em;
+  padding-top: 5em;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+

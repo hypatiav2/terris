@@ -1,0 +1,223 @@
+/*STYLE FOR COMPETITION PAGE*/
+
+.white{
+  display:block;
+  width: 100%;
+  margin: auto;
+  padding: 2%;
+  font-family: 'Josefin Slab', serif;
+  background-color:white;
+}
+
+.white h2{
+  color: #55beb3;
+  font-size: 2em;
+  margin: 1%;
+  padding-left:8%;
+}
+
+.ruledocs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 1%;
+  list-style: none;
+  align-items:center;
+}
+
+
+.document {
+  font-family: 'Josefin Slab', serif;
+  padding: 10px;
+  padding-top:30px;
+  width:260px;
+  margin: 1%;
+  min-height:195px;
+  border-radius: 10px;
+  margin-top: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  text-align: center;
+}
+
+.db{
+  background: #144068;
+}
+
+.g{
+  background: #91939d;
+}
+
+.lb{
+  background: #b4e0e5;
+  color: #144068;
+}
+
+.b{
+  background: #0598a8;
+}
+
+#faqhead{
+  background: #144068;
+  margin: 0px;
+  padding-top:3%;
+  /*width: 100%;*/
+  color:white;
+  font-family: 'Josefin Slab', serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.faqcolumn2 {
+  width:80%;
+  margin:auto;
+  float: none;
+  padding:0px;
+}
+.faqcolumn1 {
+  width:80%;
+  margin:auto;
+  float: none;
+  padding:0px;
+}
+
+@media only screen and (min-width: 768px) {
+  .faqcolumn1 {
+    width:40%;
+    float: left;
+    margin:3%;
+    margin-left:7%;
+  }
+  .faqcolumn2 {
+    width:40%;
+    float:right;
+    margin:3%;
+    margin-right:7%;
+  }
+}
+
+#videodiv {
+  display:block;
+  height:400px;
+  width:650px;
+  padding-bottom: 50px;
+  margin:auto;
+}
+
+@media only screen and (max-width: 700px) {
+  #videodiv {
+    width:95%;
+    height:45%;
+  }
+}
+#video {
+  display: block;
+  margin: 0 auto;
+}
+
+
+#team {
+  padding:5%;
+  text-align: center;
+}
+.membergrid {
+  margin: 0 auto;
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: start;
+}
+.member {
+  text-align: center;
+  flex-basis: 15vw;
+  flex-grow: 0;
+  max-width: 400px;
+  margin: 0.5em 0.2em;
+}
+.member img {
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  border: 5px solid #555;
+  flex-direction: column;
+  justify-content: center;
+  object-fit:cover;
+}
+.member p{
+  margin: 0 0 .5em 0;
+}
+.name {
+  font-weight: 700;
+  font-size: 1.3em;
+}
+.gray{
+  background: #91939d;
+  color: white;
+}
+#workshoplead img{
+  height: 190px;
+  width: 190px;
+}
+
+/* AWARDS SECTION */
+#awards{
+  text-align: center;
+  padding: 3%;
+  font-family: 'Josefin Slab', serif;
+}
+#awards h2 {
+  font-size: 3em;
+  color:#144068;
+  margin: auto;
+  margin-top: 30px;
+  padding-bottom: 5px;
+}
+.award_grid{
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin: auto;
+  transition: transform .5s;
+}
+.award_item{
+    background-color: #DEEDF0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
+}
+.award_grid award_item:hover {
+    transform: scale(1.10);
+}
+.award_description{
+  padding-top: 20px;
+}
+.award_type{
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.winner {
+  font-size: 18px;
+  font-weight:bold;
+}
+.gray.winner {
+  color:white;
+}
+.actual_award{
+    text-align: center;
+    font-size: 17px;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.award_image{
+    margin: auto;
+    margin-bottom:10px;
+    max-height: 200px;
+    max-width: 230px;
+}
+/*END STYLE OF COMPETITIoN PAGE*/

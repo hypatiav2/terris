@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Terris Challenge</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/attendee.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+  <body class="is-preload" style="background-color:black">
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+		<header id="header">
+			<img style="width:50px;float:left;padding:5px;margin-left:-15px; margin-bottom:20px" src="images/terrischallengelogo.png"></img>
+        <nav>
+          <a style="float:right" href="#menu">Menu</a>
+          <ul class="menubar">
+            <li><a href="about.html">About</a></li>
+            <li><a href="competition.html">Competition</a></li>
+            <!-- hidden on purpose --->
+            <li class="hidden"><a href="#"><b>Event Dashboard</b></a></li>
+            <li><a href="index.html">Home</a></li>
+          </ul>
+        </nav>
+			</header>
+
+      <!--- Menu --->
+        <nav id="menu">
+          <div class="inner">
+            <h2>Menu</h2>
+            <ul class="links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="competition.html">Competition</a></li>
+              <li class="hidden"><a href="terris-attendees.html">Event Dashboard</a></li>
+            </ul>
+            <a href="#" class="close">Close</a>
+          </div>
+        </nav>
+
+
+      <div id="mainsection">
+          <section id="banner" style="background-color: black;padding-bottom:40px;display:block;padding-top:80px">
+						<div>
+							<div>
+                <span><img style="width:100px;float:left;margin-left:10%;margin-right:2%" src="images/mascot.png"></img>
+                </span>
+                <h1 style="font-size:2.5em;padding:40px;padding-top:20px;padding-bottom:0px;margin-bottom:5px">Your Attendee Dashboard</h1>
+                <p style="font-size:12px;text-transform:none;padding-bottom">Daily schedule subject to change. All times in PDT. Zoom links for workshops will be replaced with links to view recordings after the workshop is over.</p>   
+              </div>
+						</div>
+					</section>
+
+        <!--Content--->
+        <section style="background-color:black;height:400px;position:relative;margin-top:50px">
+          
+          <div class="schetitle" style="position: absolute; top: 10%; right: 5%; width: 50%; display: inline-flex; justify-content: space-between;">
+            <button style="float: left; display: block; margin-top: -15px;" onclick="skipday(-1)"><</button> 
+            <p style="height: 20%;" id="daytitle">sas</p>
+            <button style="float: right; display: block; margin-top: -15px;" onclick="skipday(1)">></button>
+          </div>
+
+
+          <table id="schedule" height="100%" style="overflow-y: auto; ">
+            <th width="10%;">Time</th>
+            <th width="60%;">Event</th>
+            <th width="30%;">Location</th>
+            <th width="25%;" style="padding=10px;">Recording</th>
+            <tbody id="events">        
+            </tbody>
+          </table>
+        
+        </div>
+
+          <div id="liveclock" class="outside_rim">
+            
+            <!-- <img src="images/brownbird.png" alt="brown bird" id="brownbird" height="300px"> -->
+            <img id = "earth"src="images/earthclock.png"  style="z-index: 999; pointer-events: none;width:330px;height:330px"	>
+            
+            <div class = "clock">
+              <div class="in">
+              <div class="hand hour">
+                <img style="transition: 300ms linear all; pointer-events: none" src="images/hourhand.png" alt="hour hand" id="hourhand" height="200px">
+              </div>
+              <div class="hand minute">
+                <img style="transition: 300ms linear all; pointer-events: none" src="images/minutehand.png" alt="minute hand" id="hourhand" height="210px">
+              </div>
+              </div>
+            </div>
+          </div>
+          
+          <img src="images/calendar.png" style="display:block;margin:auto;width:90%;padding-bottom:20px;padding-top:">
+        </section>
+
+        <section style="padding:30px;background-color:#0e1d42">
+          <h1 style = "text-align: center;font-size:26px">Mentor Office Hours (PDT, Held on Discord)</h1>
+          <div id = "mentors">
+          <table class = "mentor-table" style = "width: 80%;margin:auto">
+            <tr>
+              <th>Monday 8/9</th>
+              <th>Tuesday 8/10</th>
+              <th>Wednesday 8/11</th>
+            </tr>
+            <tr>
+              <td>Sonali Singh: 10AM-12PM</td>
+              <td>Sonali Singh: 10AM-12PM</td>
+              <td>Sonali Singh: 10AM-12PM</td>
+            </tr>
+            <tr>
+              <td>Patricia Luc: 12:30PM-4PM</td>
+              <td>Patricia Luc: 12:30PM-4PM</td>
+              <td>Patricia Luc: 12:30PM-4PM</td>
+            </tr>
+            <tr>
+              <td>Sonali Singh: 2PM-4PM</td>
+              <td>Sonali Singh: 2PM-4PM</td>
+              <td>Sonali Singh: 2PM-4PM</td>
+            </tr>
+            <tr>
+              <td>Annie Liu 8PM-10PM</td>
+              <td>Annie Liu 4PM-5PM</td>
+              
+            </tr>
+          </table>
+          </div>
+          <script>
+            document.getElementById("mentors").innerHTML += mentor-table;
+            $("td").addClass("mentors-td");
+            }
+            document.getElementById("mentors").innerHTML += mentor-table;
+            $("th").addClass("mentors-th");
+            }
+          </script>
+          <style>
+            #mentors{
+              margin-right: 50px;
+              margin-left: 50px;
+            }
+            mentors-table, mentors-td, mentors-th {
+              padding: 10px;
+              border: 2px solid #1c87c9;
+              border-radius: 5px;
+              background-color: #e5e5e5;
+              text-align: center;
+            }
+            </style>
+        </section>
+      <script> 
+            document.onkeydown = checkKey;
+
+
+
+            // <td>${data[i].hourend}</td>
+          //   			<td>${data[i].minend}</td>
+          //   			<td>${data[i].daystart}</td>
+          //   			<td>${data[i].dayend}</td>
+            
+
+        function checkKey(e) {
+
+            e = e || window.event;
+
+            if (e.keyCode == '38') {
+                // up arrow
+            }
+            else if (e.keyCode == '40') {
+                // down arrow
+            }
+            else if (e.keyCode == '37') {
+              // left arrow
+              // console.log("ok");
+              movetimeforward(-15);
+            }
+            else if (e.keyCode == '39') {
+              // right arrow
+              movetimeforward(15);
+            }
+        }
+        document.getElementById("liveclock").addEventListener("wheel", scrollfunction)
+        function scrollfunction(event) {  
+          document.getElementsByTagName("body")[0].style.overflow = "hidden";
+          if (event.deltaY < 0){
+            movetimeforward(-5);
+          } else if (event.deltaY > 0) {
+             movetimeforward(5);
+          }
+        };
+
+
+
+        document.getElementById("mainsection").addEventListener("wheel", scrollfunction2)
+        function scrollfunction2() {  
+          document.getElementsByTagName("body")[0].style.overflow = "visible";
+        };  
+      </script>	
+
+      <section id="submit" style="padding:10%;padding-top:2.2em;padding-bottom:30px;background-color:#0598a8;">
+        <div style="display:block;padding:30px">
+            <h1 style="margin:auto;text-align:center">Submission Portal</h1>
+            <hr style="width:70%;margin:auto">
+        </div> 
+        <button style="height: 6em; background-color:#144068;margin:auto;display:block"><a href="#">Submission has closed</a></button> 
+
+        <h2 style="text-align:center;padding:50px;font-size:24px;">Before you submit....</h2>
+        <div style="display:flex;justify-content:center;flex-wrap:wrap;gap:30px;">
+          <div class="column">
+            <h3>💻  Product Design:</h3>
+            <hr>
+            <ul>
+              <li><a href="https://entrepreneur.indiegogo.com/education/article/6-tips-for-a-good-pitch-video/">Sample product pitch guidelines</a></li>
+              <li><a href="assets/docs/Product%20Design%20Rubric.pdf">See the judging rubric</a></li>
+              <li><a href="https://discord.com/invite/7xWNtWgTgH">Talk to a product design mentor</a></li>
+            </ul>
+          </div>
+          <div style="border-right:2px solid rgba(255, 255, 255, 0.125)"></div>
+          <div class="column">
+            <h3>🧪  Research:</h3>
+            <hr>
+            <ul>
+              <li><a href="https://libguides.usc.edu/writingguide/researchproposal">Sample research proposal guidelines</a></li>
+              <li><a href="assets/docs/Research%20Paper%20Rubric.pdf">Written proposal rubric</a></li>
+              <li><a href="assets/docs/Research%20Video%20Rubric.pdf">Video proposal rubric</a></li>
+              <li><a href="https://discord.com/invite/7xWNtWgTgH">Talk to a research mentor</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section style="background-color:#000;padding-bottom:50px;padding-top:30px">
+        <div style="display:block;padding:30px">
+            <h1 style="margin:auto;text-align:center">Edit Your Team Info</h1>
+            <hr style="width:70%;margin:auto">
+        </div> 
+        <button style="height: 6em; background-color:#144068;margin:auto;display:block"><a href="https://forms.gle/AHRb2YnbTaBSVcNRA">Participant Form</a></button> 
+      </section>
+
+
+
+      <section style="height:100%;padding:2%;background-color:#0e1d42">
+        <div style="display:flex;margin: 0 auto;align-items:center;justify-content: center;flex-wrap:wrap;padding-bottom:30px">
+          <div style="padding:20px;padding-bottom:0">
+            <h2 style="font-size:2em">Join the Discord</h2>
+            <p style="font-size:1.5em;margin:0"> international community • activities • more</p>
+          </div>
+          <a style="border:none" href="https://discord.com/invite/7xWNtWgTgH"><img id="discordlogo" src="https://cdn.logojoy.com/wp-content/uploads/20210422095037/discord-mascot.png" style="height:200px;padding:20px;padding-top:10px"></img></a>
+        </div>
+
+        <div style="display:flex;margin: 0 auto;align-items:center;justify-content: center;flex-wrap:wrap;padding-bottom:30px">
+          <a style="border:none" href="https://www.terrischallenge.info/assets/docs/Terris%20Challenge%20Swag%20Package.pdf"><img id="discordlogo" src="images/swagicon.png" style="height:230px;padding:20px;padding-top:10px"></img></a>
+          <div style="padding:15px;padding-bottom:0">
+            <h2 style="font-size:2em">Grab Your Swag</h2>
+            <p style="font-size:1.5em;margin:0"> free subscriptions • virtual products • product codes</p>
+          </div>
+        </div>
+       
+        
+      </section>
+
+      <!-- Footer --->
+        <section id="footer">
+          <div class="inner">
+            <h2 class="major">Get in touch</h2>
+            <ul class="contact">
+              <li class="icon solid fa-envelope"><a href="mailto:ch_fremont@superposition.tech?">ch_fremont@superposition.tech</a></li>
+              <li class="icon brands fa-facebook-f"><a href="https://www.facebook.com/superpositionfc/">facebook.com/superpositionfc</a></li>
+              <li class="icon brands fa-instagram"><a href="https://www.instagram.com/terris_challenge">instagram.com/terris_challenge</a></li>
+              <li class="icon brands fa-linkedin"><a href="https://www.linkedin.com/company/superposition-fremont">linkedin.com/company/superposition-fremont</a></li>
+						</ul>
+            <ul class="copyright">
+              <li>&copy; Superposition Fremont All rights reserved.</li>
+            </ul>
+          </div>
+        </section>
+	</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+      <!-- <script src="script.js"></script> -->
+      <script type="application/json" src="assets/json/data.json"></script>
+	    <script src="assets/js/attendee.js"></script>
+  </body>
+</html>
